@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments & lockfiles with local proxy metadata
+.venv/
+venv/
+ENV/
+env/
+uv.lock
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Environment & secrets (NEVER commit real keys)
+.env
+.env.*
+!.env.example
+*.pem
+*credentials*.json
+
+# Runtime persistent state & SQLite databases
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/user_sensitivities.json
+
+# Test / lint / coverage caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Terraform state & provider binaries
+deployment/terraform/.terraform/
+deployment/terraform/*.tfstate
+deployment/terraform/*.tfstate.*
+deployment/terraform/*.tfvars
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store

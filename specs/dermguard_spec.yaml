@@ -1,0 +1,124 @@
+# specs/dermguard_spec.yaml
+project:
+  name: dermguard
+  version: "1.0.0"
+  scope: l200_single_agent
+  license: Apache-2.0
+  python_version: ">=3.11"
+  dependencies:
+    google-adk: ">=1.20.0"
+    google-genai: ">=1.10.0"
+    mcp: ">=1.6.0"
+    pydantic: ">=2.9.0"
+    pytest: ">=8.3.0"
+    fastapi: ">=0.115.0"
+    uvicorn: ">=0.30.0"
+    aiosqlite: ">=0.20.0"
+    sqlalchemy: ">=2.0.0"
+    opentelemetry-api: ">=1.25.0"
+    opentelemetry-sdk: ">=1.25.0"
+
+app_config:
+  app_name: dermguard
+  compaction:
+    enabled: true
+    class: google.adk.apps.app.EventsCompactionConfig
+    compaction_interval: 10
+    overlap_size: 2
+
+agent:
+  name: dermguard_ingredient_agent
+  model: gemini-2.5-flash
+  temperature: 0.1
+  input_modality: text_only
+  scope_constraints:
+    allowed:
+      - lookup_product_ingredients_via_web_search
+      - incremental_multi_product_conflict_evaluation
+      - high_dose_and_cumulative_caution_warnings
+      - persistent_user_sensitivity_tracking
+      - am_pm_conflict_free_routine_scheduling
+    disallowed:
+      - medical_diagnosis_or_prescription_advice
+      - image_or_audio_inputs
+      - unrelated_general_queries
+
+state_and_memory:
+  session_state_keys:
+    active_routine_products:
+      type: dict[str, list[str]]
+      description: Maps product_name -> list of normalized active/INCI ingredients in current session.
+  persistent_memory:
+    storage_type: local_sqlite_and_json
+    file_path: data/user_sensitivities.json
+    sqlite_path: data/dermguard_sessions.db
+    schema:
+      user_id: string
+      sensitivities: list[string]
+      updated_at: string
+
+tools:
+  - name: GoogleSearchTool
+    type: adk_builtin
+    import_path: google.adk.tools.google_search_tool.GoogleSearchTool
+    init_args:
+      bypass_multi_tools_limit: true
+    purpose: Search public web for exact product ingredient lists (INCI) from product names.
+
+  - name: manage_routine_state
+    type: adk_function_tool
+    parameters:
+      action: enum[add, remove, list, clear]
+      product_name: optional[string]
+      ingredients: optional[list[string]]
+    purpose: >
+      Updates and returns the complete dictionary of products and ingredients
+      in tool_context.state['active_routine_products'] so new products are
+      always evaluated against existing products.
+
+  - name: manage_user_sensitivities
+    type: adk_function_tool
+    parameters:
+      action: enum[get, add, remove]
+      user_id: string
+      sensitivity: optional[string]
+    purpose: Reads or updates persistent user sensitivities in data/user_sensitivities.json and SQLite.
+
+  - name: clear_entire_skincare_routine
+    type: adk_function_tool_hitl
+    require_confirmation: true
+    purpose: High-stakes destructive clear of the user's entire skincare routine requiring explicit confirmation.
+
+  - name: reset_user_sensitivity_memory
+    type: adk_function_tool_hitl
+    require_confirmation: true
+    purpose: High-stakes wipe of persistent user sensitivity profile requiring explicit human confirmation.
+
+  - name: ingredient_safety_mcp
+    type: adk_mcp_toolset
+    transport: stdio
+    command: python
+    args: ["-m", "dermguard.mcp_server.ingredient_safety_mcp"]
+    exposed_tools:
+      - name: analyze_routine_safety
+        description: >
+          Deterministically evaluates a list of products and their ingredients
+          plus user sensitivities against a seeded cosmetic toxicology dataset.
+          Returns pairwise conflicts, cumulative stacking warnings, and
+          concentration/dosage caution flags.
+      - name: get_ingredient_caution_profile
+        description: >
+          Returns chemical class, safe max concentration %, photosensitivity,
+          pregnancy safety, and high-dose adverse effects for an ingredient.
+
+testing_gates:
+  unit_tests:
+    - test_incremental_product_addition_triggers_conflict
+    - test_cumulative_active_stacking_warning
+    - test_persistent_sensitivity_memory_across_sessions
+    - test_compaction_config_set_to_10_queries
+    - test_medical_claim_refusal
+  curl_repro_command: >
+    curl -s -X POST "http://localhost:8000/chat"
+    -H "Content-Type: application/json"
+    -d '{"user_id": "demo_user", "session_id": "sess_1", "message": "I have sensitive skin. Can I use CeraVe Renewing SA Cleanser and Paula'\''s Choice 2% BHA Liquid Exfoliant together?"}'

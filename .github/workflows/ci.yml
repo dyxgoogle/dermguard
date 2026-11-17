@@ -1,0 +1,43 @@
+name: DermGuard CI & AgentOps Quality Gates
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  lint-test-and-eval:
+    name: Lint, Seed Toxicology Rules, Unit Tests & Golden Eval
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Set up Python 3.12
+        run: uv python install 3.12
+
+      - name: Install dependencies
+        run: uv sync --extra dev
+
+      - name: Secret & hardcoded credential hygiene check
+        run: |
+          ! grep -rnE "AIza[0-9A-Za-z_-]{20,}" dermguard/ tests/ specs/ deployment/
+
+      - name: Seed deterministic 30-active toxicology dataset
+        run: uv run python -m dermguard.data.seed_ingredients
+
+      - name: Lint with Ruff
+        run: uv run ruff check dermguard tests
+
+      - name: Run unit & contract test suite
+        run: uv run pytest -v
+
+      - name: Validate Golden Evaluation Suite contracts
+        run: uv run python tests/eval/run_eval.py

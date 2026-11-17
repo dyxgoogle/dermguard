@@ -1,0 +1,726 @@
+{
+  "ingredients": {
+    "adapalene": {
+      "aliases": [
+        "adapalene",
+        "differin"
+      ],
+      "caution_threshold_pct": 0.1,
+      "chemical_class": "Third-Generation Retinoid",
+      "contraindicated_sensitivities": [
+        "pregnant",
+        "retinoid_intolerance",
+        "eczema"
+      ],
+      "display_name": "Adapalene",
+      "high_dose_adverse_effects": "Dryness, scaling, stinging, and initial retinization flare when layered with leave-on exfoliants.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": true,
+      "safe_max_concentration_pct": 0.3,
+      "stacking_caution": true,
+      "usage_guidance": "Use once nightly; buffer with ceramide moisturizer if dryness occurs and apply daily SPF."
+    },
+    "alpha_arbutin": {
+      "aliases": [
+        "alpha-arbutin",
+        "alpha arbutin",
+        "arbutin"
+      ],
+      "caution_threshold_pct": 2.0,
+      "chemical_class": "Glycosylated Hydroquinone Derivative",
+      "contraindicated_sensitivities": [
+        "pregnant"
+      ],
+      "display_name": "Alpha-Arbutin",
+      "high_dose_adverse_effects": "Can release trace hydroquinone in strongly acidic/alkaline environments; keep leave-on face products <=2%.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": true,
+      "safe_max_concentration_pct": 2.0,
+      "stacking_caution": false,
+      "usage_guidance": "Pair with daily sunscreen; avoid during pregnancy out of precaution."
+    },
+    "azelaic_acid": {
+      "aliases": [
+        "azelaic acid",
+        "potassium azeloyl diglycinate"
+      ],
+      "caution_threshold_pct": 10.0,
+      "chemical_class": "Dicarboxylic Acid",
+      "contraindicated_sensitivities": [],
+      "display_name": "Azelaic Acid",
+      "high_dose_adverse_effects": "Transient pruritus, tingling, and dryness at >=10% especially if layered over low-pH AHAs/BHAs.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 20.0,
+      "stacking_caution": true,
+      "usage_guidance": "Generally pregnancy-compatible and rosacea-friendly when introduced gradually on dry skin."
+    },
+    "bakuchiol": {
+      "aliases": [
+        "bakuchiol",
+        "psoralea corylifolia"
+      ],
+      "caution_threshold_pct": 1.0,
+      "chemical_class": "Meroterpene Botanical Alternative",
+      "contraindicated_sensitivities": [],
+      "display_name": "Bakuchiol",
+      "high_dose_adverse_effects": "Mild contact erythema above 1-2% in reactive skin.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 2.0,
+      "stacking_caution": false,
+      "usage_guidance": "Well-tolerated AM/PM; patch test botanical extracts on reactive skin."
+    },
+    "benzoyl_peroxide": {
+      "aliases": [
+        "benzoyl peroxide",
+        "bpo"
+      ],
+      "caution_threshold_pct": 2.5,
+      "chemical_class": "Organic Peroxide Keratolytic",
+      "contraindicated_sensitivities": [
+        "sensitive_skin",
+        "rosacea",
+        "eczema"
+      ],
+      "display_name": "Benzoyl Peroxide",
+      "high_dose_adverse_effects": "Strong oxidative agent; concentrations >2.5-5% drastically increase erythema, peeling, oxidative stress, and fabric bleaching without added antimicrobial benefit.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 10.0,
+      "stacking_caution": true,
+      "usage_guidance": "Prefer 2.5-4% wash-off or separated AM usage away from PM tretinoin/retinol and L-ascorbic acid."
+    },
+    "centella_asiatica": {
+      "aliases": [
+        "centella asiatica",
+        "madecassoside",
+        "asiaticoside",
+        "cica"
+      ],
+      "caution_threshold_pct": 5.0,
+      "chemical_class": "Triterpenoid Soothing Botanical",
+      "contraindicated_sensitivities": [],
+      "display_name": "Centella Asiatica (Madecassoside / Asiaticoside)",
+      "high_dose_adverse_effects": "Rare botanical contact allergy in individuals sensitive to Apiaceae plants.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 5.0,
+      "stacking_caution": false,
+      "usage_guidance": "Calming support ingredient well suited for redness-prone routines."
+    },
+    "ceramides": {
+      "aliases": [
+        "ceramides",
+        "ceramide np",
+        "ceramide ap",
+        "ceramide eop",
+        "phytosphingosine"
+      ],
+      "caution_threshold_pct": 5.0,
+      "chemical_class": "Sphingolipid Barrier Restorative",
+      "contraindicated_sensitivities": [],
+      "display_name": "Ceramides (NP, AP, EOP)",
+      "high_dose_adverse_effects": "Non-irritating physiological lipid compatible with virtually all actives.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 5.0,
+      "stacking_caution": false,
+      "usage_guidance": "Ideal buffer alongside retinoids or exfoliating acids to mitigate barrier damage."
+    },
+    "denatured_alcohol": {
+      "aliases": [
+        "alcohol denat",
+        "denatured alcohol",
+        "sd alcohol",
+        "isopropyl alcohol"
+      ],
+      "caution_threshold_pct": 5.0,
+      "chemical_class": "Volatile Short-Chain Solvent Alcohol",
+      "contraindicated_sensitivities": [
+        "sensitive_skin",
+        "rosacea",
+        "eczema"
+      ],
+      "display_name": "Alcohol Denat. / SD Alcohol",
+      "high_dose_adverse_effects": "High-percentage solvent alcohol disrupts intercellular lipid bilayers and amplifies penetration and sting of acids and retinoids.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 10.0,
+      "stacking_caution": true,
+      "usage_guidance": "Avoid stacking multiple high-alcohol toners and sunscreens on dry, rosacea-prone, or retinized skin."
+    },
+    "essential_oils": {
+      "aliases": [
+        "essential oils",
+        "lavender oil",
+        "bergamot oil",
+        "citrus limon peel oil",
+        "limonene",
+        "linalool",
+        "peppermint oil",
+        "eucalyptus oil"
+      ],
+      "caution_threshold_pct": 0.1,
+      "chemical_class": "Aromatic Volatile Oils",
+      "contraindicated_sensitivities": [
+        "sensitive_skin",
+        "rosacea",
+        "eczema",
+        "fragrance_allergy"
+      ],
+      "display_name": "Volatile Essential Oils & Citrus Terpenes",
+      "high_dose_adverse_effects": "sensitizing oxidized linalool/limonene hydroperoxides; furanocoumarins in cold-pressed citrus oils induce phytophotodermatitis in UV light.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 1.0,
+      "stacking_caution": true,
+      "usage_guidance": "Avoid in leave-on facial products if you have sensitive skin, rosacea, or fragrance allergy."
+    },
+    "fragrance_parfum": {
+      "aliases": [
+        "fragrance",
+        "parfum",
+        "aroma",
+        "cinnamal",
+        "eugenol",
+        "citral"
+      ],
+      "caution_threshold_pct": 0.1,
+      "chemical_class": "Aromatic Allergen Blend",
+      "contraindicated_sensitivities": [
+        "sensitive_skin",
+        "rosacea",
+        "eczema",
+        "fragrance_allergy"
+      ],
+      "display_name": "Synthetic Fragrance / Parfum",
+      "high_dose_adverse_effects": "Leading cosmetic trigger of allergic contact dermatitis and rosacea flares, compounded when stacked across cleanser, toner, serum, and cream.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 1.0,
+      "stacking_caution": true,
+      "usage_guidance": "Select fragrance-free formulations for compromised barriers or reactive skin."
+    },
+    "glycolic_acid": {
+      "aliases": [
+        "glycolic acid",
+        "aha",
+        "hydroxyacetic acid"
+      ],
+      "caution_threshold_pct": 5.0,
+      "chemical_class": "Alpha Hydroxy Acid (AHA)",
+      "contraindicated_sensitivities": [
+        "sensitive_skin",
+        "rosacea",
+        "eczema"
+      ],
+      "display_name": "Glycolic Acid",
+      "high_dose_adverse_effects": "Smallest-molecular-weight AHA; >=7% free acid penetrates rapidly causing stinging, over-exfoliation, post-inflammatory hyperpigmentation risk, and UV sunburn sensitivity.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 10.0,
+      "stacking_caution": true,
+      "usage_guidance": "Limit leave-on >=7% toners to 1-3 nights weekly; never layer with retinoids on the same night; wear daily SPF 30+."
+    },
+    "hyaluronic_acid": {
+      "aliases": [
+        "hyaluronic acid",
+        "sodium hyaluronate",
+        "hydrolyzed hyaluronic acid"
+      ],
+      "caution_threshold_pct": 2.0,
+      "chemical_class": "Glycosaminoglycan Humectant",
+      "contraindicated_sensitivities": [],
+      "display_name": "Hyaluronic Acid / Sodium Hyaluronate",
+      "high_dose_adverse_effects": "Very low-molecular-weight fragments (>2%) may feel tacky or mildly pro-inflammatory on severely broken barriers if unsealed.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 2.0,
+      "stacking_caution": false,
+      "usage_guidance": "Barrier-supportive humectant; seal with an occlusive/emollient moisturizer."
+    },
+    "hydroquinone": {
+      "aliases": [
+        "hydroquinone"
+      ],
+      "caution_threshold_pct": 1.0,
+      "chemical_class": "Tyrosinase Inhibitor Depigmenting Agent",
+      "contraindicated_sensitivities": [
+        "pregnant",
+        "sensitive_skin",
+        "rosacea",
+        "eczema"
+      ],
+      "display_name": "Hydroquinone",
+      "high_dose_adverse_effects": "High systemic absorption (~35-45%), irritant contact dermatitis, exogenous ochronosis with prolonged unmonitored use, and temporary dark staining with benzoyl peroxide.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": true,
+      "safe_max_concentration_pct": 2.0,
+      "stacking_caution": true,
+      "usage_guidance": "Contraindicated in pregnancy; strictly avoid mixing with benzoyl peroxide; requires diligent SPF 50."
+    },
+    "kojic_acid": {
+      "aliases": [
+        "kojic acid",
+        "kojic dipalmitate"
+      ],
+      "caution_threshold_pct": 1.0,
+      "chemical_class": "Chelation Brightening Acid",
+      "contraindicated_sensitivities": [
+        "sensitive_skin",
+        "rosacea",
+        "eczema"
+      ],
+      "display_name": "Kojic Acid",
+      "high_dose_adverse_effects": "Sensitization and allergic contact dermatitis risk above 1% leave-on concentration.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 1.0,
+      "stacking_caution": true,
+      "usage_guidance": "Keep concentration <=1% and wear daily broad-spectrum SPF."
+    },
+    "lactic_acid": {
+      "aliases": [
+        "lactic acid",
+        "ammonium lactate",
+        "sodium lactate"
+      ],
+      "caution_threshold_pct": 5.0,
+      "chemical_class": "Alpha Hydroxy Acid (AHA)",
+      "contraindicated_sensitivities": [
+        "rosacea",
+        "eczema"
+      ],
+      "display_name": "Lactic Acid",
+      "high_dose_adverse_effects": "Low-pH exfoliation stinging, barrier thinning when stacked with other acids, and UV photosensitivity.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 10.0,
+      "stacking_caution": true,
+      "usage_guidance": "Apply 2-3 evenings per week and pair with broad-spectrum sunscreen the following morning."
+    },
+    "mandelic_acid": {
+      "aliases": [
+        "mandelic acid"
+      ],
+      "caution_threshold_pct": 8.0,
+      "chemical_class": "Alpha Hydroxy Acid (AHA)",
+      "contraindicated_sensitivities": [
+        "eczema"
+      ],
+      "display_name": "Mandelic Acid",
+      "high_dose_adverse_effects": "Cumulative stratum corneum thinning and dryness if combined with additional AHAs/BHAs.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 10.0,
+      "stacking_caution": true,
+      "usage_guidance": "Gentler larger-molecule AHA, yet still requires daily SPF protection."
+    },
+    "matrixyl_peptides": {
+      "aliases": [
+        "palmitoyl tripeptide-1",
+        "palmitoyl tetrapeptide-7",
+        "palmitoyl pentapeptide-4",
+        "matrixyl",
+        "argireline",
+        "acetyl hexapeptide-8"
+      ],
+      "caution_threshold_pct": 10.0,
+      "chemical_class": "Biomimetic Polypeptide",
+      "contraindicated_sensitivities": [],
+      "display_name": "Signaling Peptides (Palmitoyl Tripeptide / Pentapeptide)",
+      "high_dose_adverse_effects": "Amide bonds can undergo acid hydrolysis and lose efficacy when directly layered with low-pH AHAs (pH <3.5).",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 10.0,
+      "stacking_caution": false,
+      "usage_guidance": "Separate from strong low-pH exfoliating acids between AM and PM."
+    },
+    "niacinamide": {
+      "aliases": [
+        "niacinamide",
+        "nicotinamide",
+        "vitamin b3"
+      ],
+      "caution_threshold_pct": 5.0,
+      "chemical_class": "Pyridinecarboxamide Barrier Active",
+      "contraindicated_sensitivities": [],
+      "display_name": "Niacinamide (Vitamin B3)",
+      "high_dose_adverse_effects": "Optimal efficacy occurs at 2-5%; stacking multiple serums/moisturizers reaching >=10% frequently induces niacin-related flushing, follicular irritation, and stinging.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 10.0,
+      "stacking_caution": true,
+      "usage_guidance": "Check cleanser, toner, serum, and moisturizer totals so cumulative Niacinamide stays near 2-5%."
+    },
+    "panthenol": {
+      "aliases": [
+        "panthenol",
+        "d-panthenol",
+        "provitamin b5"
+      ],
+      "caution_threshold_pct": 5.0,
+      "chemical_class": "Soothing Humectant",
+      "contraindicated_sensitivities": [],
+      "display_name": "Panthenol (Provitamin B5)",
+      "high_dose_adverse_effects": "Minimal irritation risk; heavy balms at 5% can feel rich on oily skin.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 5.0,
+      "stacking_caution": false,
+      "usage_guidance": "Safe AM/PM barrier-soothing hydrator."
+    },
+    "peptides_copper": {
+      "aliases": [
+        "copper tripeptide-1",
+        "copper peptides",
+        "ghk-cu",
+        "copper pca"
+      ],
+      "caution_threshold_pct": 1.0,
+      "chemical_class": "Carrier Metallopeptide",
+      "contraindicated_sensitivities": [],
+      "display_name": "Copper Tripeptide-1 (GHK-Cu)",
+      "high_dose_adverse_effects": "Excess copper peptide stacking (>1-2%) can trigger transient laxity/irritation and chelates/oxidizes L-ascorbic acid or hydrolyzes in low-pH direct acids.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 2.0,
+      "stacking_caution": true,
+      "usage_guidance": "Do not layer in the same step with direct AHAs/BHAs or pure L-Ascorbic Acid."
+    },
+    "pha_gluconolactone": {
+      "aliases": [
+        "gluconolactone",
+        "lactobionic acid",
+        "pha",
+        "polyhydroxy acid"
+      ],
+      "caution_threshold_pct": 10.0,
+      "chemical_class": "Polyhydroxy Acid (PHA)",
+      "contraindicated_sensitivities": [],
+      "display_name": "Gluconolactone / Lactobionic Acid (PHA)",
+      "high_dose_adverse_effects": "Mild over-exfoliation only if layered atop strong AHAs, BHAs, or retinoids.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 15.0,
+      "stacking_caution": true,
+      "usage_guidance": "Humectant gentle exfoliant suitable for sensitive skin when used as the sole acid."
+    },
+    "retinaldehyde": {
+      "aliases": [
+        "retinaldehyde",
+        "retinal"
+      ],
+      "caution_threshold_pct": 0.05,
+      "chemical_class": "Retinoid",
+      "contraindicated_sensitivities": [
+        "pregnant",
+        "retinoid_intolerance",
+        "rosacea"
+      ],
+      "display_name": "Retinaldehyde (Retinal)",
+      "high_dose_adverse_effects": "Accelerated cell turnover irritation, redness, and UV sensitivity at concentrations >=0.1%.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": true,
+      "safe_max_concentration_pct": 0.2,
+      "stacking_caution": true,
+      "usage_guidance": "PM use only; do not stack with other retinoids or low-pH AHAs in the same routine."
+    },
+    "retinol": {
+      "aliases": [
+        "retinol",
+        "vitamin a",
+        "retinyl"
+      ],
+      "caution_threshold_pct": 0.3,
+      "chemical_class": "Retinoid",
+      "contraindicated_sensitivities": [
+        "pregnant",
+        "retinoid_intolerance",
+        "rosacea",
+        "eczema"
+      ],
+      "display_name": "Retinol (Vitamin A Alcohol)",
+      "high_dose_adverse_effects": "Retinoid dermatitis, erythema, peeling, transepidermal water loss, and heightened UV sensitivity.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": true,
+      "safe_max_concentration_pct": 1.0,
+      "stacking_caution": true,
+      "usage_guidance": "Apply at night only on dry skin; start 2-3x weekly and pair with broad-spectrum SPF 30+ daily."
+    },
+    "salicylic_acid": {
+      "aliases": [
+        "salicylic acid",
+        "bha",
+        "beta hydroxy acid",
+        "betaine salicylate",
+        "capryloyl salicylic acid"
+      ],
+      "caution_threshold_pct": 1.5,
+      "chemical_class": "Beta Hydroxy Acid (BHA)",
+      "contraindicated_sensitivities": [
+        "sensitive_skin",
+        "pregnant",
+        "eczema",
+        "rosacea"
+      ],
+      "display_name": "Salicylic Acid (BHA)",
+      "high_dose_adverse_effects": "Lipophilic keratolytic; leave-on concentrations at 2% or multi-product stacking (cleanser + leave-on toner/serum) strip sebaceous lipids, causing tightness, flaking, and barrier compromise.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": true,
+      "safe_max_concentration_pct": 2.0,
+      "stacking_caution": true,
+      "usage_guidance": "Avoid stacking multiple Salicylic Acid products in the same routine; avoid high-dose leave-on BHA during pregnancy."
+    },
+    "sodium_ascorbyl_phosphate": {
+      "aliases": [
+        "sodium ascorbyl phosphate",
+        "ascorbyl glucoside",
+        "tetrahexyldecyl ascorbate",
+        "3-o-ethyl ascorbic acid"
+      ],
+      "caution_threshold_pct": 10.0,
+      "chemical_class": "Neutral-pH Vitamin C Derivative",
+      "contraindicated_sensitivities": [],
+      "display_name": "Sodium Ascorbyl Phosphate / Ascorbyl Glucoside",
+      "high_dose_adverse_effects": "Rare mild tingling above 10-15%.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 15.0,
+      "stacking_caution": false,
+      "usage_guidance": "Neutral-pH antioxidant alternative for sensitive or rosacea-prone users."
+    },
+    "sulfur": {
+      "aliases": [
+        "sulfur",
+        "colloidal sulfur"
+      ],
+      "caution_threshold_pct": 3.0,
+      "chemical_class": "Keratolytic Mineral Active",
+      "contraindicated_sensitivities": [
+        "sensitive_skin",
+        "eczema",
+        "rosacea"
+      ],
+      "display_name": "Colloidal Sulfur",
+      "high_dose_adverse_effects": "Pronounced desiccation, scaling, and barrier irritation at 5-10% when combined with retinoids, benzoyl peroxide, or salicylic acid.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 10.0,
+      "stacking_caution": true,
+      "usage_guidance": "Use as targeted wash-off mask or spot care; avoid layering with harsh keratolytics."
+    },
+    "tea_tree_oil": {
+      "aliases": [
+        "tea tree oil",
+        "melaleuca alternifolia",
+        "terpinen-4-ol"
+      ],
+      "caution_threshold_pct": 0.5,
+      "chemical_class": "Volatile Terpene Oil",
+      "contraindicated_sensitivities": [
+        "sensitive_skin",
+        "rosacea",
+        "eczema",
+        "fragrance_allergy"
+      ],
+      "display_name": "Melaleuca Alternifolia (Tea Tree) Leaf Oil",
+      "high_dose_adverse_effects": "Undiluted or >2% oxidized terpenes readily provoke allergic and irritant contact dermatitis.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 2.0,
+      "stacking_caution": true,
+      "usage_guidance": "Never apply undiluted essential oil; avoid on rosacea, eczema, or fragrance-allergic skin."
+    },
+    "tranexamic_acid": {
+      "aliases": [
+        "tranexamic acid"
+      ],
+      "caution_threshold_pct": 5.0,
+      "chemical_class": "Synthetic Lysine Derivative",
+      "contraindicated_sensitivities": [],
+      "display_name": "Tranexamic Acid",
+      "high_dose_adverse_effects": "Mild dryness above 5% topical concentration.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 5.0,
+      "stacking_caution": false,
+      "usage_guidance": "Pairs well with niacinamide and sunscreen for uneven tone routines."
+    },
+    "tretinoin": {
+      "aliases": [
+        "tretinoin",
+        "retinoic acid",
+        "all-trans retinoic acid"
+      ],
+      "caution_threshold_pct": 0.025,
+      "chemical_class": "Potent Retinoid",
+      "contraindicated_sensitivities": [
+        "pregnant",
+        "retinoid_intolerance",
+        "sensitive_skin",
+        "rosacea",
+        "eczema"
+      ],
+      "display_name": "Tretinoin (All-Trans Retinoic Acid)",
+      "high_dose_adverse_effects": "Severe barrier disruption, chemical irritation, scaling, burning, and photosensitivity.",
+      "photosensitivity": true,
+      "pregnancy_contraindicated": true,
+      "safe_max_concentration_pct": 0.1,
+      "stacking_caution": true,
+      "usage_guidance": "Prescription-strength retinoid; avoid combining with exfoliating acids or benzoyl peroxide in the same session."
+    },
+    "vitamin_c_l_ascorbic_acid": {
+      "aliases": [
+        "ascorbic acid",
+        "l-ascorbic acid",
+        "pure vitamin c",
+        "vitamin c"
+      ],
+      "caution_threshold_pct": 15.0,
+      "chemical_class": "Low-pH Antioxidant",
+      "contraindicated_sensitivities": [
+        "sensitive_skin",
+        "rosacea"
+      ],
+      "display_name": "L-Ascorbic Acid (Pure Vitamin C)",
+      "high_dose_adverse_effects": "Formulated at pH 2.5-3.5; concentrations >=15-20% trigger low-pH stinging, flushing in rosacea, and oxidize copper peptides or benzoyl peroxide.",
+      "photosensitivity": false,
+      "pregnancy_contraindicated": false,
+      "safe_max_concentration_pct": 20.0,
+      "stacking_caution": true,
+      "usage_guidance": "Best used in AM under sunscreen to boost photoprotection; keep away from benzoyl peroxide and copper peptides."
+    }
+  },
+  "pairwise_conflicts": [
+    {
+      "ingredient_a": "glycolic_acid",
+      "ingredient_b": "retinol",
+      "mechanism": "Compound stratum corneum exfoliation + accelerated retinoid turnover compromises lipid barrier and triggers acute erythema/peeling.",
+      "resolution": "Alternate nights (e.g., Glycolic Acid on Monday/Thursday PM, Retinol on Tuesday/Friday PM) rather than layering in the same evening.",
+      "severity": "HIGH"
+    },
+    {
+      "ingredient_a": "glycolic_acid",
+      "ingredient_b": "tretinoin",
+      "mechanism": "Severe barrier stripping, low-pH irritation, and heightened retinoid dermatitis.",
+      "resolution": "Do not combine in the same PM routine; pause strong AHAs until skin is fully acclimated, or separate across non-consecutive nights.",
+      "severity": "CRITICAL"
+    },
+    {
+      "ingredient_a": "glycolic_acid",
+      "ingredient_b": "adapalene",
+      "mechanism": "Additive keratolytic irritation and transepidermal water loss.",
+      "resolution": "Use on alternating evenings with a ceramide moisturizer buffer.",
+      "severity": "HIGH"
+    },
+    {
+      "ingredient_a": "glycolic_acid",
+      "ingredient_b": "retinaldehyde",
+      "mechanism": "Dual exfoliation and retinoid signaling increases burning and flaking.",
+      "resolution": "Separate onto alternating PM nights.",
+      "severity": "HIGH"
+    },
+    {
+      "ingredient_a": "lactic_acid",
+      "ingredient_b": "retinol",
+      "mechanism": "Low-pH AHA exfoliation combined with retinol compromises skin barrier integrity.",
+      "resolution": "Alternate nights instead of layering in one PM session.",
+      "severity": "HIGH"
+    },
+    {
+      "ingredient_a": "lactic_acid",
+      "ingredient_b": "tretinoin",
+      "mechanism": "High risk of chemical irritation and barrier breakdown.",
+      "resolution": "Avoid same-night layering; reserve AHA for occasional off-nights only if tolerated.",
+      "severity": "CRITICAL"
+    },
+    {
+      "ingredient_a": "salicylic_acid",
+      "ingredient_b": "retinol",
+      "mechanism": "Lipophilic BHA keratolysis strips sebum and increases retinoid penetration and dryness.",
+      "resolution": "Use Salicylic Acid in the AM (or alternate nights) and Retinol in the PM.",
+      "severity": "HIGH"
+    },
+    {
+      "ingredient_a": "salicylic_acid",
+      "ingredient_b": "tretinoin",
+      "mechanism": "Severe xerosis, scaling, and stinging from simultaneous BHA + potent retinoid application.",
+      "resolution": "Separate strictly into AM wash-off BHA vs. PM tretinoin, or alternate days.",
+      "severity": "CRITICAL"
+    },
+    {
+      "ingredient_a": "salicylic_acid",
+      "ingredient_b": "glycolic_acid",
+      "mechanism": "Multi-acid AHA + BHA layering causes excessive corneodesmosome cleavage and chemical over-exfoliation.",
+      "resolution": "Choose one leave-on exfoliant per routine rather than stacking separate AHA and BHA products.",
+      "severity": "HIGH"
+    },
+    {
+      "ingredient_a": "benzoyl_peroxide",
+      "ingredient_b": "tretinoin",
+      "mechanism": "Mutual chemical oxidation degrades non-microencapsulated tretinoin potency while amplifying irritation.",
+      "resolution": "Apply Benzoyl Peroxide in the AM and Tretinoin strictly in the PM.",
+      "severity": "CRITICAL"
+    },
+    {
+      "ingredient_a": "benzoyl_peroxide",
+      "ingredient_b": "retinol",
+      "mechanism": "Peroxide oxidation degrades retinol stability and compounds barrier dryness.",
+      "resolution": "Separate Benzoyl Peroxide to AM and Retinol to PM.",
+      "severity": "HIGH"
+    },
+    {
+      "ingredient_a": "benzoyl_peroxide",
+      "ingredient_b": "vitamin_c_l_ascorbic_acid",
+      "mechanism": "Redox incompatibility: Benzoyl Peroxide rapidly oxidizes L-Ascorbic Acid into inactive dehydroascorbic acid.",
+      "resolution": "Use Benzoyl Peroxide as a rinsed cleanser (thoroughly washed off) or alternate days/times.",
+      "severity": "HIGH"
+    },
+    {
+      "ingredient_a": "benzoyl_peroxide",
+      "ingredient_b": "hydroquinone",
+      "mechanism": "Co-application causes transient dark brown/orange oxidative staining of the stratum corneum and heightened irritation.",
+      "resolution": "Do not layer together; separate AM and PM and wash hands thoroughly.",
+      "severity": "HIGH"
+    },
+    {
+      "ingredient_a": "peptides_copper",
+      "ingredient_b": "vitamin_c_l_ascorbic_acid",
+      "mechanism": "Copper ions catalyze metal-induced oxidation of L-Ascorbic Acid, diminishing antioxidant activity.",
+      "resolution": "Use L-Ascorbic Acid in the AM and Copper Peptides in the PM.",
+      "severity": "HIGH"
+    },
+    {
+      "ingredient_a": "peptides_copper",
+      "ingredient_b": "glycolic_acid",
+      "mechanism": "Low pH (<3.5) protonates peptide ligands, destabilizing the copper-tripeptide complex and hydrolyzing peptide bonds.",
+      "resolution": "Separate direct acids and Copper Peptides into different routines (AM vs. PM or alternate nights).",
+      "severity": "MODERATE"
+    },
+    {
+      "ingredient_a": "matrixyl_peptides",
+      "ingredient_b": "glycolic_acid",
+      "mechanism": "Strong low-pH AHAs can hydrolyze signaling polypeptide chains and reduce efficacy.",
+      "resolution": "Apply signaling peptides in AM and Glycolic Acid in PM.",
+      "severity": "MODERATE"
+    },
+    {
+      "ingredient_a": "vitamin_c_l_ascorbic_acid",
+      "ingredient_b": "retinol",
+      "mechanism": "pH mismatch (pH ~3.0 L-Ascorbic Acid vs. pH ~5.5-6.0 Retinol) plus dual active irritation when layered back-to-back.",
+      "resolution": "Place Vitamin C in the AM routine under SPF and Retinol in the PM routine.",
+      "severity": "MODERATE"
+    },
+    {
+      "ingredient_a": "sulfur",
+      "ingredient_b": "benzoyl_peroxide",
+      "mechanism": "Compounded keratolytic drying causes severe flaking and barrier disruption.",
+      "resolution": "Do not combine leave-on Sulfur and Benzoyl Peroxide in the same session.",
+      "severity": "HIGH"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "total_actives": 30
+}
